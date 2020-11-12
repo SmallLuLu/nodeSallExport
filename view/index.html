@@ -1,0 +1,26 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: Luyh
+ * @Date: 2020-11-12 10:18:47
+ * @LastEditors: Luyh
+ * @LastEditTime: 2020-11-12 11:16:05
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+</head>
+<body>
+    <a href="/add">发表留言</a>
+    <ul>
+        {{each mes}}
+        <li>{{$value.name}}说：{{$value.mes}} <span style="float: right;">{{$value.dataTime}}</span></li>
+        {{/each}}
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+ * @Description: 
+ * @Version: 2.0
+ * @Autor: Luyh
+ * @Date: 2020-11-12 11:06:22
+ * @LastEditors: Luyh
+ * @LastEditTime: 2020-11-12 12:03:35
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发表留言</title>
+</head>
+<body>
+    <div><a href="/">返回消息列表</a></div>
+    <form action="/pinglun" method="get">
+        <div>
+            <span>用户名：</span>
+            <input type="text" name="name" id="username" required>
+        </div>
+        <div>
+            <span>发布内容：</span>
+            <textarea name="mes" id="mes" cols="30" rows="10" required></textarea>
+        </div>
+        <button>提交</button>
+    </form>
+</body>
+</html>
